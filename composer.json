@@ -25,7 +25,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "nstdio\\notymo\\": ""
+            "nstdio\\yii2notymo\\": ""
         }
     }
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bf956037162b53ed97dc06be02537850",
+    "hash": "c5def56b80de90cd2874ae55c2d6c0da",
     "content-hash": "05a62a1fc787e4131f37e9af59e7d69c",
     "packages": [
         {
@@ -256,12 +256,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nstdio/notymo.git",
-                "reference": "8457d3cbaaae222f57f4ff2f1e932204d3834759"
+                "reference": "3ae41528f0fea2905fc9b05a53a0847710c4c037"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nstdio/notymo/zipball/8457d3cbaaae222f57f4ff2f1e932204d3834759",
-                "reference": "8457d3cbaaae222f57f4ff2f1e932204d3834759",
+                "url": "https://api.github.com/repos/nstdio/notymo/zipball/3ae41528f0fea2905fc9b05a53a0847710c4c037",
+                "reference": "3ae41528f0fea2905fc9b05a53a0847710c4c037",
                 "shasum": ""
             },
             "type": "library",
@@ -278,7 +278,7 @@
                 }
             ],
             "description": "Android and iOS push notification library.",
-            "time": "2016-10-01 21:36:41"
+            "time": "2016-10-03 06:23:20"
         },
         {
             "name": "yiisoft/yii2",
@@ -286,12 +286,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "d4cb037dcb2e4c0f59b213294f6690909ae7f622"
+                "reference": "8b43028f566e8f118456174a0a4072999006981c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/d4cb037dcb2e4c0f59b213294f6690909ae7f622",
-                "reference": "d4cb037dcb2e4c0f59b213294f6690909ae7f622",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/8b43028f566e8f118456174a0a4072999006981c",
+                "reference": "8b43028f566e8f118456174a0a4072999006981c",
                 "shasum": ""
             },
             "require": {
@@ -372,7 +372,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-09-30 10:10:17"
+            "time": "2016-10-04 15:11:13"
         },
         {
             "name": "yiisoft/yii2-composer",
