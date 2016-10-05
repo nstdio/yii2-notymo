@@ -7,9 +7,14 @@
         convertWarningsToExceptions="true"
         stopOnError="false"
         stopOnFailure="false">
-    <testsutes>
-        <testsuite name="All">
+    <testsuites>
+        <testsuite name="Project">
             <directory>tests</directory>
         </testsuite>
-    </testsutes>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory>src/notymo</directory>
+        </whitelist>
+    </filter>
 </phpunit>
