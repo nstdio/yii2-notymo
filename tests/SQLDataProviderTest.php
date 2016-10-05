@@ -78,8 +78,6 @@ class SQLDataProviderTest extends TestCase
         $userIds = range(1, 5);
         $data = $dataProvider->getTokens($userIds);
 
-        self::assertCount(count($userIds), $data);
-
         foreach ($data as $item) {
             self::assertArrayHasKey(Yii::$app->params['apns'], $item);
             self::assertArrayHasKey(Yii::$app->params['gcm'], $item);
