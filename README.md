@@ -55,7 +55,7 @@ use nstdio\notymo\Message;
 $userIds = [1, 2, 3, 4, 5];
 
 /** @var \nstdio\yii2notymo\PushNotification $push */
-$push = Yii::$app->get('notymo');
+$push = Yii::$app->notymo;
 
 $msg = new Message();
 $msg->setMessage("Test msg.");
