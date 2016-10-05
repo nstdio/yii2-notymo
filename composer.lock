@@ -256,13 +256,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nstdio/notymo.git",
-                "reference": "3ae41528f0fea2905fc9b05a53a0847710c4c037"
+                "reference": "65eae29ea00c061bacfc09ae6f271bb83a984f65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nstdio/notymo/zipball/3ae41528f0fea2905fc9b05a53a0847710c4c037",
-                "reference": "3ae41528f0fea2905fc9b05a53a0847710c4c037",
+                "url": "https://api.github.com/repos/nstdio/notymo/zipball/65eae29ea00c061bacfc09ae6f271bb83a984f65",
+                "reference": "65eae29ea00c061bacfc09ae6f271bb83a984f65",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
             },
             "type": "library",
             "autoload": {
@@ -278,7 +281,7 @@
                 }
             ],
             "description": "Android and iOS push notification library.",
-            "time": "2016-10-03 06:23:20"
+            "time": "2016-10-05 18:27:47"
         },
         {
             "name": "yiisoft/yii2",
@@ -286,12 +289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "8b43028f566e8f118456174a0a4072999006981c"
+                "reference": "3915bc568ae72f245e56a8633123a685601f86ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/8b43028f566e8f118456174a0a4072999006981c",
-                "reference": "8b43028f566e8f118456174a0a4072999006981c",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3915bc568ae72f245e56a8633123a685601f86ac",
+                "reference": "3915bc568ae72f245e56a8633123a685601f86ac",
                 "shasum": ""
             },
             "require": {
@@ -372,7 +375,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-10-04 15:11:13"
+            "time": "2016-10-05 09:01:15"
         },
         {
             "name": "yiisoft/yii2-composer",
