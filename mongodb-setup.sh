@@ -14,7 +14,7 @@ if test -f /sys/kernel/mm/transparent_hugepage/enabled; then
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
 fi
 
-mongodb notymo_test_db
+mongo notymo_test_db
 
 # PHP Extension :
 
