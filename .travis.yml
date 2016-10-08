@@ -9,7 +9,7 @@ sudo: required
 
 install:
     - chmod a+x mongodb-setup.sh
-    - ./mongodb-setup.sh
+    - sudo ./mongodb-setup.sh
     - composer install
 
 services:

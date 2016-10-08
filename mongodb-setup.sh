@@ -8,10 +8,10 @@ echo "MongoDB Server version:"
 mongod --version
 
 if test -f /sys/kernel/mm/transparent_hugepage/defrag; then
-sudo echo never > /sys/kernel/mm/transparent_hugepage/defrag
+echo never > /sys/kernel/mm/transparent_hugepage/defrag
 fi
 if test -f /sys/kernel/mm/transparent_hugepage/enabled; then
-sudo echo never > /sys/kernel/mm/transparent_hugepage/enabled
+echo never > /sys/kernel/mm/transparent_hugepage/enabled
 fi
 
 mongo notymo_test_db;
