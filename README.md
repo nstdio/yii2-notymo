@@ -1,4 +1,4 @@
-# yii2-notymo
+# yii2-notymo [![Build Status](https://travis-ci.org/nstdio/yii2-notymo.svg?branch=master)](https://travis-ci.org/nstdio/yii2-notymo) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nstdio/yii2-notymo/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nstdio/yii2-notymo/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/nstdio/yii2-notymo/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/nstdio/yii2-notymo/?branch=master)
 The iOS and Android push notification extension for Yii2.
 
 # Installation
