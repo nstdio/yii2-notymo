@@ -74,6 +74,13 @@ class PushNotification extends Object
         ];
     }
 
+    /**
+     * Send push notification message to users mentioned in `$userId`.
+     * If we do not pass the second parameter push notification will be sent to all users.
+     *
+     * @param MessageInterface $message
+     * @param mixed            $userId
+     */
     public function send(MessageInterface $message, $userId = null)
     {
         $oldTokens = $message->getToken();

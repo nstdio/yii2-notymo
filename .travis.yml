@@ -9,6 +9,7 @@ install:
 
 services:
     - mysql
+    - mongodb
 
 before_script:
     - if [ $TRAVIS_PHP_VERSION = '5.6' ]; then PHPUNIT_FLAGS="--coverage-clover coverage.xml"; else PHPUNIT_FLAGS=""; fi
