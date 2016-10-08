@@ -5,6 +5,8 @@ php:
     - '5.6'
     - '7.0'
 
+sudo: required
+
 install:
     - chmod a+x mongodb-setup.sh
     - ./mongodb-setup.sh
