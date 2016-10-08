@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c5def56b80de90cd2874ae55c2d6c0da",
-    "content-hash": "05a62a1fc787e4131f37e9af59e7d69c",
+    "hash": "f9446c25302ab6ac23bf937ff0fce28d",
+    "content-hash": "7c23fe0e854b96704fe769708eb1376a",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -256,12 +256,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nstdio/notymo.git",
-                "reference": "65eae29ea00c061bacfc09ae6f271bb83a984f65"
+                "reference": "1059a4caff22853976ef121122bed8ec1cb045a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nstdio/notymo/zipball/65eae29ea00c061bacfc09ae6f271bb83a984f65",
-                "reference": "65eae29ea00c061bacfc09ae6f271bb83a984f65",
+                "url": "https://api.github.com/repos/nstdio/notymo/zipball/1059a4caff22853976ef121122bed8ec1cb045a3",
+                "reference": "1059a4caff22853976ef121122bed8ec1cb045a3",
                 "shasum": ""
             },
             "require": {
@@ -281,7 +281,7 @@
                 }
             ],
             "description": "Android and iOS push notification library.",
-            "time": "2016-10-05 18:27:47"
+            "time": "2016-10-05 19:39:43"
         },
         {
             "name": "yiisoft/yii2",
@@ -289,12 +289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "3915bc568ae72f245e56a8633123a685601f86ac"
+                "reference": "450c66353f450ac53755cd30c1d7135f5f7384d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3915bc568ae72f245e56a8633123a685601f86ac",
-                "reference": "3915bc568ae72f245e56a8633123a685601f86ac",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/450c66353f450ac53755cd30c1d7135f5f7384d0",
+                "reference": "450c66353f450ac53755cd30c1d7135f5f7384d0",
                 "shasum": ""
             },
             "require": {
@@ -375,7 +375,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-10-05 09:01:15"
+            "time": "2016-10-06 22:00:14"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -423,6 +423,54 @@
                 "yii2"
             ],
             "time": "2016-06-05 20:34:32"
+        },
+        {
+            "name": "yiisoft/yii2-mongodb",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-mongodb.git",
+                "reference": "89ea4bee51590aea0d8eb26b75e234e63938f5be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-mongodb/zipball/89ea4bee51590aea0d8eb26b75e234e63938f5be",
+                "reference": "89ea4bee51590aea0d8eb26b75e234e63938f5be",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mongodb": ">=1.0.0",
+                "yiisoft/yii2": "~2.0.5"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\mongodb\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "MongoDb extension for the Yii framework",
+            "keywords": [
+                "active-record",
+                "mongo",
+                "mongodb",
+                "yii2"
+            ],
+            "time": "2016-10-04 13:17:03"
         }
     ],
     "packages-dev": [],

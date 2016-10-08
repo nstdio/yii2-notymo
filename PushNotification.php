@@ -35,7 +35,7 @@ class PushNotification extends Object
             throw new InvalidConfigException("dataProvider configuration required.");
         }
         if (!isset($config['dataProvider']['class'])) {
-            $config['dataProvider']['class'] = 'nstdio\yii2notymo\provider\SQLDataProvider';
+            $config['dataProvider']['class'] = $this->autoDetectProvider();
         }
         if (isset($config['push']['skipApns'])) {
             $config['dataProvider']['apns'] = null;
@@ -47,12 +47,34 @@ class PushNotification extends Object
         $this->push = new PushImpl($config['push']);
 
         $this->dataProvider = Yii::createObject($config['dataProvider']);
+
+        if (!($this->dataProvider instanceof DataProvider)) {
+            throw new InvalidConfigException("dataProvider must extend " . DataProvider::className() . " class.");
+        }
+
         unset($config['push'], $config['dataProvider']);
 
         parent::__construct($config);
     }
 
-    public function send(MessageInterface $message, $userId)
+    protected function autoDetectProvider()
+    {
+        foreach ($this->getDbConnectionList() as $service => $providerName) {
+            if (Yii::$app->get($service, false) !== null) {
+                return $providerName;
+            }
+        }
+    }
+
+    public function getDbConnectionList()
+    {
+        return [
+            'db'      => 'nstdio\yii2notymo\provider\SQLDataProvider',
+            'mongodb' => 'nstdio\yii2notymo\provider\MongoDataProvider',
+        ];
+    }
+
+    public function send(MessageInterface $message, $userId = null)
     {
         $oldTokens = $message->getToken();
         $tokens = $this->dataProvider->getTokens($userId);

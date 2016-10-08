@@ -3,6 +3,7 @@ namespace nstdio\yii2notymo\provider;
 
 use yii\base\InvalidConfigException;
 use yii\base\Object;
+use yii\db\Query;
 
 /**
  * Class DataProvider
@@ -33,11 +34,38 @@ abstract class DataProvider extends Object
     public $gcm;
 
     /**
+     * @var Query
+     */
+    protected $query;
+
+    /**
      * @param $identifiers
      *
      * @return array
      */
-    abstract public function getTokens($identifiers);
+    public function getTokens($identifiers)
+    {
+        $this->query->from($this->table);
+
+        $select = [];
+        if ($this->apns !== null) {
+            $select[] = $this->apns;
+        }
+
+        if ($this->gcm !== null) {
+            $select[] = $this->gcm;
+        }
+
+        if (!empty($select)) {
+            $this->query->select($select);
+        }
+
+        if (!empty($identifiers)) {
+            $this->query->andWhere([$this->identifier => $identifiers]);
+        }
+
+        return $this->query->all();
+    }
 
     public function init()
     {
