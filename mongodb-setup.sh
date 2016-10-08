@@ -7,14 +7,8 @@
 echo "MongoDB Server version:"
 mongod --version
 
-if test -f /sys/kernel/mm/transparent_hugepage/defrag; then
-echo never > /sys/kernel/mm/transparent_hugepage/defrag
-fi
-if test -f /sys/kernel/mm/transparent_hugepage/enabled; then
-echo never > /sys/kernel/mm/transparent_hugepage/enabled
-fi
 
-mongo notymo_test_db
+mongo notymo_test_db --eval 'db.createUser({user: "travis", pwd: "test", roles: ["readWrite", "dbAdmin"]});'
 
 # PHP Extension :
 
