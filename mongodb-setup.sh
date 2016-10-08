@@ -14,10 +14,6 @@ if test -f /sys/kernel/mm/transparent_hugepage/enabled; then
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
 fi
 
-echo "Restarting mongod ..."
-
-service mongod restart;
-
 # PHP Extension :
 
 if (php --version | grep -i HipHop > /dev/null); then
