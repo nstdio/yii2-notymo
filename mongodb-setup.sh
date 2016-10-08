@@ -14,6 +14,8 @@ if test -f /sys/kernel/mm/transparent_hugepage/enabled; then
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
 fi
 
+mongodb notymo_test_db
+
 # PHP Extension :
 
 if (php --version | grep -i HipHop > /dev/null); then
@@ -26,3 +28,5 @@ else
 fi
 
 cat /etc/mongodb.conf
+cat /sys/kernel/mm/transparent_hugepage/defrag
+cat /sys/kernel/mm/transparent_hugepage/enabled
