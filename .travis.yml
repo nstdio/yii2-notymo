@@ -7,9 +7,11 @@ php:
 
 sudo: required
 
+before_install:
+     - chmod a+x mongodb-setup.sh
+     - sudo ./mongodb-setup.sh
+
 install:
-    - chmod a+x mongodb-setup.sh
-    - sudo ./mongodb-setup.sh
     - composer install
 
 services:
