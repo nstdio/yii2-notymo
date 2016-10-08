@@ -14,6 +14,10 @@ if test -f /sys/kernel/mm/transparent_hugepage/enabled; then
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
 fi
 
+echo "Restarting mongod ..."
+
+service mongod restart;
+
 mongo notymo_test_db;
 
 # PHP Extension :
