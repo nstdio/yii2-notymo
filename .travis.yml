@@ -6,6 +6,7 @@ php:
     - '7.0'
 
 install:
+    - chmod a+x mongodb-setup.sh
     - ./mongodb-setup.sh
     - composer install
 

@@ -7,8 +7,6 @@
 echo "MongoDB Server version:"
 mongod --version
 
-mongo yii2test --eval 'db.createUser({user: "travis", pwd: "test", roles: ["readWrite", "dbAdmin"]});'
-
 # PHP Extension :
 
 if (php --version | grep -i HipHop > /dev/null); then
