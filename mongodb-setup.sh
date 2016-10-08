@@ -7,6 +7,8 @@
 echo "MongoDB Server version:"
 mongod --version
 
+mongo notymo_test_db;
+
 # PHP Extension :
 
 if (php --version | grep -i HipHop > /dev/null); then
