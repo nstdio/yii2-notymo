@@ -18,8 +18,6 @@ echo "Restarting mongod ..."
 
 service mongod restart;
 
-mongo notymo_test_db;
-
 # PHP Extension :
 
 if (php --version | grep -i HipHop > /dev/null); then
